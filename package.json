@@ -1,0 +1,16 @@
+{
+  "name": "next-dotnet",
+  "version": "1.0.0",
+  "description": "A mockup of Microsoft’s .NET landing page, built to replicate the look and feel of the official site for educational and design purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
