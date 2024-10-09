@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   #test-lucas {
     grid-template-rows: repeat(1, minmax(0, 1fr));
     grid-template-columns: repeat(4, minmax(0, 1fr));
