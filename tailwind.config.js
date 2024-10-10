@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -15,7 +15,11 @@ module.exports = {
         '3xl': '1820px',
         '4xl': '1920px',
       },
+      fontFamily: {
+        'sans': ['OpenSans', 'sans-serif'],
+        'grotesk': ['SpaceGrotesk', 'serif'],
+    },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

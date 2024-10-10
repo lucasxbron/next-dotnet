@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Next.NET</title>
     <link rel="stylesheet" href="dist/css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
     
 </head>
 
-<body class="bg-neutral-800 px-6 sm:bg-[url('/assets/images/home-hero.png')] bg-no-repeat bg-fixed bg-[top_-15rem_right_-25rem] bg-[length:auto_80%] md:bg-[top_-15rem_right_-23rem] lg:bg-[top_-15rem_right_-16rem] 2xl:bg-[top_-15rem_right_-10rem] 3xl:bg-[top_-15rem_right_-5rem] 4xl:bg-[top_-15rem_right_-1rem]">
-    <header class="max-w-8xl mx-auto ">
+<body class="bg-neutral-800 font-sans px-6 sm:bg-[url('/assets/images/home-hero.png')] bg-no-repeat bg-fixed bg-[top_-15rem_right_-25rem] bg-[length:auto_80%] md:bg-[top_-15rem_right_-23rem] lg:bg-[top_-15rem_right_-16rem] 2xl:bg-[top_-15rem_right_-10rem] 3xl:bg-[top_-15rem_right_-5rem] 4xl:bg-[top_-15rem_right_-1rem]">
+    <header class="max-w-7xl mx-auto ">
         <nav>
             <div class=" flex flex-wrap items-center justify-between mx-auto py-4">
                 <div class="flex items-center space-x-3">
@@ -25,7 +25,7 @@
                     <div class="hidden w-full md:block md:w-auto ml-3 mt-1">
                         <!-- id="navbar-dropdown" -->
                         <ul
-                            class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-neutral-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                            class="flex flex-col font-medium text-sm p-4 md:p-0 mt-4 rounded-lg bg-neutral-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
                         <li></li>
                             <li>
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -149,7 +149,7 @@
         <section class="pt-12">
             <div class="sm:grid sm:grid-cols-2">
                 <div>
-                    <h2 class="text-4xl xl:text-6xl xl:pr-32 font-extrabold">
+                    <h2 class="text-4xl font-grotesk xl:text-6xl xl:pr-32 font-bold">
                         Build. Test. Deploy.
                     </h2>
                     <p id="font-3xl" class="text-2xl py-5">
@@ -171,7 +171,7 @@
             </div>
         </section>
         <section>
-            <h3 id="font-4xl" class="text-center text-3xl py-8 mt-6 font-bold">
+            <h3 id="font-4xl" class="text-center font-grotesk text-3xl py-8 mt-6 font-bold">
                 Build it with Next.NET
             </h3>
             <div id="grid-r1-c4" class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:grid-rows-2">
@@ -264,7 +264,8 @@
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>
