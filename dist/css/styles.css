@@ -1727,6 +1727,18 @@ input:checked + .toggle-bg {
   background-size: auto 80%
 }
 
+.bg-\[length\:auto_85\%\] {
+  background-size: auto 85%
+}
+
+.bg-\[length\:auto_82\%\] {
+  background-size: auto 82%
+}
+
+.bg-\[length\:auto_81\%\] {
+  background-size: auto 81%
+}
+
 .bg-fixed {
   background-attachment: fixed
 }
@@ -1740,8 +1752,88 @@ input:checked + .toggle-bg {
   background-position: 95% 0%
 }
 
+.bg-\[top_-15rem_right_-15rem\] {
+  background-position: top -15rem right -15rem
+}
+
+.bg-\[top_-15rem_right_-150rem\] {
+  background-position: top -15rem right -150rem
+}
+
+.bg-\[top_-20rem_right_-15rem\] {
+  background-position: top -20rem right -15rem
+}
+
+.bg-\[top_-10rem_right_-15rem\] {
+  background-position: top -10rem right -15rem
+}
+
+.bg-\[top_-10rem_right_-10rem\] {
+  background-position: top -10rem right -10rem
+}
+
+.bg-\[top_-10rem_right_-12rem\] {
+  background-position: top -10rem right -12rem
+}
+
+.bg-\[top_-10rem_right_-8rem\] {
+  background-position: top -10rem right -8rem
+}
+
+.bg-\[top_-10rem_right_-19rem\] {
+  background-position: top -10rem right -19rem
+}
+
+.bg-\[top_-10rem_right_-11rem\] {
+  background-position: top -10rem right -11rem
+}
+
+.bg-\[top_-5rem_right_-12rem\] {
+  background-position: top -5rem right -12rem
+}
+
+.bg-\[top_-8rem_right_-12rem\] {
+  background-position: top -8rem right -12rem
+}
+
+.bg-\[top_-8rem_right_-13rem\] {
+  background-position: top -8rem right -13rem
+}
+
+.bg-\[top_-9rem_right_-13rem\] {
+  background-position: top -9rem right -13rem
+}
+
+.bg-\[top_-7rem_right_-13rem\] {
+  background-position: top -7rem right -13rem
+}
+
+.bg-\[top_-10rem_right_-13rem\] {
+  background-position: top -10rem right -13rem
+}
+
+.bg-\[top_-10rem_right_-18rem\] {
+  background-position: top -10rem right -18rem
+}
+
+.bg-\[top_-10rem_right_-16rem\] {
+  background-position: top -10rem right -16rem
+}
+
+.bg-\[top_-10rem_right_-22rem\] {
+  background-position: top -10rem right -22rem
+}
+
+.bg-\[top_-15rem_right_-22rem\] {
+  background-position: top -15rem right -22rem
+}
+
 .bg-\[top_-15rem_right_-25rem\] {
   background-position: top -15rem right -25rem
+}
+
+.bg-\[top_-16rem_right_-25rem\] {
+  background-position: top -16rem right -25rem
 }
 
 .bg-no-repeat {
@@ -2342,6 +2434,82 @@ input:checked + .toggle-bg {
     background-position: top -15rem right -23rem
   }
 
+  .md\:bg-\[top_-150rem_right_-23rem\] {
+    background-position: top -150rem right -23rem
+  }
+
+  .md\:bg-\[top_-8rem_right_-15rem\] {
+    background-position: top -8rem right -15rem
+  }
+
+  .md\:bg-\[top_-8rem_right_-12rem\] {
+    background-position: top -8rem right -12rem
+  }
+
+  .md\:bg-\[top_-8rem_right_-10rem\] {
+    background-position: top -8rem right -10rem
+  }
+
+  .md\:bg-\[top_-8rem_right_-9rem\] {
+    background-position: top -8rem right -9rem
+  }
+
+  .md\:bg-\[top_-11rem_right_-15rem\] {
+    background-position: top -11rem right -15rem
+  }
+
+  .md\:bg-\[top_-11rem_right_-20rem\] {
+    background-position: top -11rem right -20rem
+  }
+
+  .md\:bg-\[top_-11rem_right_-19rem\] {
+    background-position: top -11rem right -19rem
+  }
+
+  .md\:bg-\[top_-11rem_right_-18rem\] {
+    background-position: top -11rem right -18rem
+  }
+
+  .md\:bg-\[top_-8rem_right_-20rem\] {
+    background-position: top -8rem right -20rem
+  }
+
+  .md\:bg-\[top_-12rem_right_-20rem\] {
+    background-position: top -12rem right -20rem
+  }
+
+  .md\:bg-\[top_-14rem_right_-20rem\] {
+    background-position: top -14rem right -20rem
+  }
+
+  .md\:bg-\[top_-17rem_right_-20rem\] {
+    background-position: top -17rem right -20rem
+  }
+
+  .md\:bg-\[top_-17rem_right_-24rem\] {
+    background-position: top -17rem right -24rem
+  }
+
+  .md\:bg-\[top_-17rem_right_-25rem\] {
+    background-position: top -17rem right -25rem
+  }
+
+  .md\:bg-\[top_-15rem_right_-24rem\] {
+    background-position: top -15rem right -24rem
+  }
+
+  .md\:bg-\[top_-15rem_right_-20rem\] {
+    background-position: top -15rem right -20rem
+  }
+
+  .md\:bg-\[top_-15rem_right_-21rem\] {
+    background-position: top -15rem right -21rem
+  }
+
+  .md\:bg-\[top_-17rem_right_-21rem\] {
+    background-position: top -17rem right -21rem
+  }
+
   .md\:p-0 {
     padding: 0px
   }
@@ -2360,9 +2528,89 @@ input:checked + .toggle-bg {
   .lg\:bg-\[top_-15rem_right_-16rem\] {
     background-position: top -15rem right -16rem
   }
+
+  .lg\:bg-\[top_-15rem_right_-160rem\] {
+    background-position: top -15rem right -160rem
+  }
+
+  .lg\:bg-\[top_-15rem_right_-10rem\] {
+    background-position: top -15rem right -10rem
+  }
+
+  .lg\:bg-\[top_-10rem_right_-10rem\] {
+    background-position: top -10rem right -10rem
+  }
+
+  .lg\:bg-\[top_-9rem_right_-10rem\] {
+    background-position: top -9rem right -10rem
+  }
+
+  .lg\:bg-\[top_-9rem_right_-9rem\] {
+    background-position: top -9rem right -9rem
+  }
+
+  .lg\:bg-\[top_-9rem_right_-8rem\] {
+    background-position: top -9rem right -8rem
+  }
+
+  .lg\:bg-\[top_-9rem_right_-7rem\] {
+    background-position: top -9rem right -7rem
+  }
+
+  .lg\:bg-\[top_-11rem_right_-7rem\] {
+    background-position: top -11rem right -7rem
+  }
+
+  .lg\:bg-\[top_-12rem_right_-7rem\] {
+    background-position: top -12rem right -7rem
+  }
+
+  .lg\:bg-\[top_-10rem_right_-7rem\] {
+    background-position: top -10rem right -7rem
+  }
+
+  .lg\:bg-\[top_-5rem_right_-7rem\] {
+    background-position: top -5rem right -7rem
+  }
+
+  .lg\:bg-\[top_-15rem_right_-7rem\] {
+    background-position: top -15rem right -7rem
+  }
+
+  .lg\:bg-\[top_-15rem_right_-17rem\] {
+    background-position: top -15rem right -17rem
+  }
+
+  .lg\:bg-\[top_-18rem_right_-17rem\] {
+    background-position: top -18rem right -17rem
+  }
+
+  .lg\:bg-\[top_-18rem_right_-25rem\] {
+    background-position: top -18rem right -25rem
+  }
+
+  .lg\:bg-\[top_-16rem_right_-17rem\] {
+    background-position: top -16rem right -17rem
+  }
+
+  .lg\:bg-\[top_-17rem_right_-17rem\] {
+    background-position: top -17rem right -17rem
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:bg-\[top_-18rem_right_-17rem\] {
+    background-position: top -18rem right -17rem
+  }
+
+  .xl\:bg-\[top_-15rem_right_-17rem\] {
+    background-position: top -15rem right -17rem
+  }
+
+  .xl\:bg-\[top_-15rem_right_-16rem\] {
+    background-position: top -15rem right -16rem
+  }
+
   .xl\:pr-32 {
     padding-right: 8rem
   }
@@ -2377,17 +2625,73 @@ input:checked + .toggle-bg {
   .\32xl\:bg-\[top_-15rem_right_-10rem\] {
     background-position: top -15rem right -10rem
   }
+
+  .\32xl\:bg-\[top_-12rem_right_-10rem\] {
+    background-position: top -12rem right -10rem
+  }
+
+  .\32xl\:bg-\[top_-12rem_right_-5rem\] {
+    background-position: top -12rem right -5rem
+  }
+
+  .\32xl\:bg-\[top_-12rem_right_-1rem\] {
+    background-position: top -12rem right -1rem
+  }
+
+  .\32xl\:bg-\[top_-14rem_right_-1rem\] {
+    background-position: top -14rem right -1rem
+  }
+
+  .\32xl\:bg-\[top_-14rem_right_-5rem\] {
+    background-position: top -14rem right -5rem
+  }
 }
 
 @media (min-width: 1820px) {
   .\33xl\:bg-\[top_-15rem_right_-5rem\] {
     background-position: top -15rem right -5rem
   }
+
+  .\33xl\:bg-\[top_-15rem_right_-50rem\] {
+    background-position: top -15rem right -50rem
+  }
+
+  .\33xl\:bg-\[top_-15rem_right_-4rem\] {
+    background-position: top -15rem right -4rem
+  }
+
+  .\33xl\:bg-\[top_-15rem_right_-1rem\] {
+    background-position: top -15rem right -1rem
+  }
+
+  .\33xl\:bg-\[top_-15rem_right_2rem\] {
+    background-position: top -15rem right 2rem
+  }
+
+  .\33xl\:bg-\[top_-10rem_right_2rem\] {
+    background-position: top -10rem right 2rem
+  }
+
+  .\33xl\:bg-\[top_-14rem_right_2rem\] {
+    background-position: top -14rem right 2rem
+  }
 }
 
 @media (min-width: 1920px) {
   .\34xl\:bg-\[top_-15rem_right_-1rem\] {
     background-position: top -15rem right -1rem
+  }
+
+  .\34xl\:bg-\[top_-15rem_right_2rem\] {
+    background-position: top -15rem right 2rem
+  }
+
+  .\34xl\:bg-\[top_-15rem_right_4rem\] {
+    background-position: top -15rem right 4rem
+  }
+
+  .\34xl\:bg-\[top_-15rem_right_5rem\] {
+    background-position: top -15rem right 5rem
   }
 }
 
