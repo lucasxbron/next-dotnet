@@ -8,17 +8,129 @@
     <link rel="stylesheet" href="dist/css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
 </head>
-<body class="bg-neutral-800">
-    <header class="">
+
+<body class="bg-neutral-800 px-6 sm:bg-[url('/assets/images/home-hero.png')] bg-no-repeat bg-fixed bg-[top_-15rem_right_-25rem] bg-[length:auto_80%] md:bg-[top_-15rem_right_-23rem] lg:bg-[top_-15rem_right_-16rem] 2xl:bg-[top_-15rem_right_-10rem] 3xl:bg-[top_-15rem_right_-5rem] 4xl:bg-[top_-15rem_right_-1rem]">
+    <header class="max-w-8xl mx-auto ">
         <nav>
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="assets/images/next-dotnet-logo.png" class="h-8" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Next<span class="px-5">|</span>.NET</span>
-                </a>
-                <button data-collapse-toggle="navbar-dropdown" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            <div class=" flex flex-wrap items-center justify-between mx-auto py-4">
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="assets/images/next-dotnet-logo.png" class="h-8" alt="Next.NET Logo" />
+                        <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Next<span
+                                class="px-1">|</span>.NET</span>
+                    </a>
+                    
+                    <div class="hidden w-full md:block md:w-auto ml-3 mt-1">
+                        <!-- id="navbar-dropdown" -->
+                        <ul
+                            class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-neutral-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                        <li></li>
+                            <li>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
+                                    Why .NET
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <div id="dropdownNavbar"
+                                    class="z-10 hidden font-normal bg-neutral-700 divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul class="py-1 text-sm text-white" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">What is .NET?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">Why choose .NET?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">Who uses .NET?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button id="featuresDropdownLink" data-dropdown-toggle="featuresDropdown"
+                                    class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
+                                    Features
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <div id="featuresDropdown"
+                                    class="z-10 hidden font-normal bg-neutral-700 divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul class="py-1 text-sm text-white" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">ASP.NET Core</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">Web APIs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">Blazor</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button id="docsDropdownLink" data-dropdown-toggle="docsDropdown"
+                                    class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
+                                    Docs
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <div id="docsDropdown"
+                                    class="z-10 hidden font-normal bg-neutral-700 divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul class="py-1 text-sm text-white" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">Razor Pages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">MVC</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-4 py-2 hover:bg-neutral-600 rounded-lg">SignalIR</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">Learn</a>
+                            </li>
+                            <li class="">
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:p-0 hover:underline">Downloads</a>
+                            </li>
+                            <!-- <li class="">
+                                <a href="#"
+                                    class="py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">Community</a>
+                            </li>
+                            <li class="">
+                                <a href="#"
+                                    class="py-2 px-3 text-white rounded hover:bg-neutral-600 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">LIVE
+                                    TV</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative flex items-center md:ml-1">
+                    <button class="md:flex hidden items-center justify-center p-2 w-10 h-10 rounded-lg text-white hover:bg-neutral-700 focus:outline-none">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="md:hidden p-2 w-10 h-10 rounded-lg text-white hover:bg-neutral-700 focus:outline-none">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-dropdown" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -27,129 +139,20 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto">
-                    <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-neutral-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
-                                Why .NET
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
-                            </button>
-                            <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">What is .NET</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Why choose .NET</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Who uses .NET</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <button id="featuresDropdownLink" data-dropdown-toggle="featuresDropdown"
-                                class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
-                                Features
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
-                            </button>
-                            <div id="featuresDropdown"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">ASP.NET Core</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web APIs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Blazor</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">Learn</a>
-                        </li>
-                        <li>
-                            <button id="docsDropdownLink" data-dropdown-toggle="docsDropdown"
-                                class="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto hover:underline">
-                                Docs
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
-                            </button>
-                            <div id="docsDropdown"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Razor Pages</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">MVC</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">SignalIR</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:underline">Downloads</a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">Community</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">LIVE
-                                TV</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="hidden md:block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 hover:underline">All
-                                Next.net</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative flex items-center md:ml-1">
-                    <button class="md:flex hidden p-2 bg-gray-200 rounded hover:bg-gray-300 focus:outline-none">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <button class="md:hidden p-2 bg-gray-200 rounded hover:bg-gray-300 focus:outline-none">
-                        <i class="fas fa-search"></i>
-                    </button>
                 </div>
             </div>
         </nav>
     </header>
     <main
-        class="max-w-7xl mx-auto px-3 mt-10 text-white md:bg-[url('/assets/images/default-image-placeholder.png')] bg-no-repeat bg-[length:auto_60%] bg-[position:85%_10%]">
+        class="max-w-7xl mx-auto mt-2 text-white ">
+        <!-- bg-[length:auto_60%] bg-[position:95%_0%] -->
         <section class="pt-12">
             <div class="sm:grid sm:grid-cols-2">
                 <div>
-                    <h2 class="text-4xl xl:text-6xl font-extrabold">
+                    <h2 class="text-4xl xl:text-6xl xl:pr-32 font-extrabold">
                         Build. Test. Deploy.
                     </h2>
-                    <p class="text-xl xl:text-2xl py-5">
+                    <p id="font-3xl" class="text-2xl py-5">
                         Next.NET is the free, open-source, cross-platform framework for
                         building modern apps and powerful cloud services.
                     </p>
@@ -157,7 +160,7 @@
                         <button
                             class="w-36 h-12 bg-violet-500 rounded-xl text-neutral-800 transition ease-in-out delay-50 hover:scale-[102%] hover:bg-violet-400 duration-150">
                             Download</button><button
-                            class="w-36 h-12 border-2 border-violet-500 rounded-xl text-violet-500 transition ease-in-out delay-50 hover:scale-[102%] hover:bg-neutral-900 duration-150">
+                            class="w-36 h-12 border-2 bg-add-grey border-violet-500 rounded-xl text-violet-500 transition ease-in-out delay-50 hover:scale-[102%] hover:bg-neutral-700 duration-150">
                             Get Started
                         </button>
                     </div>
@@ -168,24 +171,24 @@
             </div>
         </section>
         <section>
-            <h3 class="text-center text-3xl xl:text-7xl py-8 font-bold">
+            <h3 id="font-4xl" class="text-center text-3xl py-8 mt-6 font-bold">
                 Build it with Next.NET
             </h3>
-            <div id="test-lucas" class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:grid-rows-2">
+            <div id="grid-r1-c4" class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:grid-rows-2">
                 <a href="#"
-                    class="border-2 border-violet-500 rounded-xl p-4 bg-neutral-700 transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-900 duration-100">
+                    class="border-2 border-violet-500 rounded-xl p-4 bg-add-grey transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-700 duration-100">
                     <i
                         class="fa-solid fa-globe bg-gradient-to-br from-violet-500 to-pink-500 bg-clip-text text-transparent"></i>
-                    <h4 class="py-1 text-lg text-violet-500 font-semibold">Web</h4>
+                    <h4 class="py-1 text-xl bg-gradient-to-br from-violet-500 to-pink-500 bg-clip-text text-transparent">Web</h4>
                     <p>
                         Build web apps and services for macOS, Windows, Linux, and Docker.
                     </p>
                 </a>
                 <a href="#"
-                    class="border-2 border-fuchsia-400 rounded-xl p-4 bg-neutral-700 transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-900 duration-100">
+                    class="border-2 border-fuchsia-400 rounded-xl p-4 bg-add-grey transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-700 duration-100">
                     <i
                         class="fa-solid fa-mobile bg-gradient-to-br from-fuchsia-400 to-orange-500 bg-clip-text text-transparent"></i>
-                    <h4 class="py-1 text-lg text-fuchsia-400 font-semibold">
+                    <h4 class="py-1 text-xl bg-gradient-to-br from-fuchsia-400 to-orange-500 bg-clip-text text-transparent">
                         Mobile and desktop
                     </h4>
                     <p>
@@ -194,30 +197,30 @@
                     </p>
                 </a>
                 <a href="#"
-                    class="border-2 border-emerald-300 rounded-xl p-4 bg-neutral-700 transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-900 duration-100">
+                    class="border-2 border-emerald-300 rounded-xl p-4 bg-add-grey transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-700 duration-100">
                     <i
                         class="fa-solid fa-cloud bg-gradient-to-br from-emerald-300 to-violet-500 bg-clip-text text-transparent"></i>
-                    <h4 class="py-1 text-lg text-emerald-300 font-semibold">Cloud</h4>
+                    <h4 class="py-1 text-xl bg-gradient-to-br from-emerald-300 to-violet-500 bg-clip-text text-transparent">Cloud</h4>
                     <p>
                         Build scalable and resilient cloud-native apps that run on all
                         major cloud providers.
                     </p>
                 </a>
                 <a href="#"
-                    class="border-2 border-blue-400 rounded-xl p-4 bg-neutral-700 transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-900 duration-100">
+                    class="border-2 border-blue-400 rounded-xl p-4 bg-add-grey transition ease-in-out delay-50 hover:scale-[101%] hover:bg-neutral-700 duration-100">
                     <i
                         class="fa-solid fa-bars-progress bg-gradient-to-br from-blue-400 to-emerald-300 bg-clip-text text-transparent"></i>
-                    <h4 class="py-1 text-lg text-blue-400 font-semibold">
+                    <h4 class="py-1 text-xl bg-gradient-to-br from-blue-400 to-emerald-300 bg-clip-text text-transparent">
                         Microservices
                     </h4>
-                    <p>
+                    <p class="text-base">
                         Create independently deployable microservices that run on Docker
                         containers.
                     </p>
                 </a>
             </div>
             <div
-                class="py-5 flex flex-col flex-wrap justify-center items-center sm:flex-row gap-6 text-center text-violet-400">
+                class="py-5 flex flex-col flex-wrap justify-center items-center sm:flex-row gap-6 text-center text-violet-500">
                 <div class="flex items-center group">
                     <a href="#" class="mr-2 hover:underline decoration-1">Artificial Intelligence & ML</a>
                     <i
